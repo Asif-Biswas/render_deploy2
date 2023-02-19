@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: render_deploy2
+    buildCommand: "./build.sh"
+    env: python
+    startCommand: "gunicorn render_deploy2.wsgi:application"
